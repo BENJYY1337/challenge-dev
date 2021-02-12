@@ -20,8 +20,8 @@ const AddUserForm = (props) => {
     }
 
     return (
-        <form class="new-member-form">
-            <label for="name">Nom de l&apos;Argonaute</label>
+        <form className="new-member-form">
+            <label htmlFor="name">Nom de l&apos;Argonaute</label>
             <input id="name" name="name" type="text" placeholder="Charalampos" value={user.name} onChange={handleChange} />
             <button type="submit" onClick={handleSubmit}>Envoyer</button>
         </form>

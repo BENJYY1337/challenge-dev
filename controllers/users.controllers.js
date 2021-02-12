@@ -11,7 +11,6 @@ module.exports.readUser = (req, res) => {
 module.exports.createUser = async (req, res) => {
     const newUser = new UsersModels({
         name: req.body.name,
-        username: req.body.username
     });
     try {
         const user = await newUser.save();

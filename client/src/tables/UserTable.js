@@ -3,19 +3,23 @@ import React from 'react';
 const UserTable = (props) => {
     return (
 
-        <div class="wrapper">
-            <section class="member-list">
+        <div className="wrapper">
+            <section className="member-list">
                 {
                     props.users.length > 0 ? (
                         props.users.map(user => {
                             return (
-                                <div key={user._id} class="member-item">{user.name}</div>
+                                <div key={user._id} className="member-item">{user.name}</div>
                             )
                         })
                     ) : (
-                            <tr>
-                                <td colSpan={4}>No users found</td>
-                            </tr>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td colSpan={4}>No users found</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         )
                 }
             </section>
