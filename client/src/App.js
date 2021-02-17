@@ -11,7 +11,7 @@ export default function App() {
     listUser();
   }, []);
 
-  // refresh
+  // REFRESH
   const refreshList = () => {
     listUser();
   };
@@ -30,7 +30,7 @@ export default function App() {
   // CREATE
   const addUser = async (user) => {
     await Axios.create(user)
-      .then(response => {
+      .then(() => {
         setUsers(user)
         refreshList();
       })

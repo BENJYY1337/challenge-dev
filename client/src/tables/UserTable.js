@@ -13,13 +13,7 @@ const UserTable = (props) => {
                             )
                         })
                     ) : (
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td colSpan={4}>No users found</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <h3>Membres de l'équipage non trouvé</h3>
                         )
                 }
             </section>

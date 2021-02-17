@@ -1,5 +1,4 @@
 const UsersModels = require("../models/users.models");
-const ObjectID = require("mongoose").Types.ObjectId;
 
 module.exports.readUser = (req, res) => {
     UsersModels.find((err, docs) => {
